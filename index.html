@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+   <meta name="keywords" content="github,github的创建,博客设计,前端博客,前端问题解决,响应式开发,移动端开发,扁平化设计,简约博客设计" />
+    <meta name="description" content="高亚丽的博客，记录平时做项目遇到的一些问题。简约设计，让开发更美好。逐步渐进，让代码更简约。" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<style type="text/css">
+       header {
+       	width: 1000px;
+         height: 150px;
+         padding-top: 20px;
+         margin: 0 auto;
+       }
+       header .left {
+         float: left;
+         position: relative;
+       }
+       header .left a {
+        color:rgb(85,178,209);
+       }
+       header .left img {
+       	width: 112px;
+       }
+       header .left span {
+       	display: inline-block;
+       width: 230px;
+       letter-spacing: 2px;
+       position: absolute;
+       top:5px;
+       left: 120px;
+       color:#555;
+       font-size: 16px;
+       }
+       header .right {
+       	float: right;
+       }
+        header .right li {
+        	float: right;
+        	margin-left: 40px;
+        }
+        header .right li i {
+        	padding-top: 5px;
+        	color: black;
+        }
+        header .right li i:hover {
+        	color:rgb(220,0,0);
+        }
+         .bars {
+           width: 100%;
+           height: 45px;
+           background-color: black;
+           color: white;
+           
+        }
+        .bars i {
+        	line-height: 45px;
+           padding-left: 5px;
+        }
+         @media screen and (min-width: 996px) {
+         	 header {
+             display: block;
+           }
+           .bars {
+             display: none;
+           }
+         } 
+        @media screen and (max-width: 996px) {
+           header {
+             display: none;
+           }
+           .bars {
+             display: block;
+           }
+        }
+        .center_img img {
+          width: 100%;
+        }
+        /*设置内容样式*/
+        .row {
+          width: 1000px;
+          margin: 0 auto;
+          padding-top: 20px;
+          position: relative;
+          margin-bottom: 100px;
+        }
+        .row section .article-list-item {
+          border-bottom: 1px solid #eee;
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
+        .row section .article-list-item time {
+          color: #999;
+          padding-right: 10%;
+          padding-left: 2%;
+          float: left;
+        }
+         .row section .article-list-item a {
+          font-size: 18px;
+          color: #555555;
+          float: left;
+         }
+          @media screen and (max-width:996px) {
+            .row {
+              width: 100%;
+            }
+            .row section .article-list-item time {
+            /*padding-right: 5%;*/
+            width: 25%;
+            padding-right: 5%;
+            /*background-color: red;*/
+          }
+             .row section .article-list-item a {
+            font-size: 18px;
+            width: 55%;
+            /*background-color: green;*/
+          }
+          
+          }
+        @media screen and (max-width:521px) {
+          .row {
+            padding-top: 5px;
+          }
+          body {
+            width: 100%;
+            /*overflow: hidden;*/
+          }
+         
+        }
+       .row .load {
+        position: absolute;
+        right: 0;
+        top: 1px;
+       }
+     /*article*/
+     article {
+      padding-left: 5%;
+      /*padding-right: 2%;*/
+     }
+     article div {
+      border-bottom: solid 1px #eee;
+      padding-bottom: 10px;
+     }
+     article div time {
+      color: #555;
+     }
+     article p {
+      color: #555;
+      /*background-color: red;*/
+      letter-spacing: 1px;
+     }
+     article li {
+      color:#555;
+     }
+     article img {
+      width: 80%;
+      padding-left: 5%;
+     }
+     article textarea {
+      width: 100%;
+     }
+     article .daima {
+      padding-left: 1px;
+      background-color: rgb(248,248,248);
+      border:1px solid rgb(223,223,223);
+     }
+     .l {
+      width: 60%;
+      /*height: 1200px;*/
+      display: none;
+      float: left;
+      background-color: yellow;
+      background-color: rgb(51,51,51);
+       transition: all 2s;
+      -webkit-transition: all 2s;
+      /*height: 300px;*/
+     }
+     .l a {
+      
+      color: rgba(255,255,255,0.5);
+     }
+     .l a:hover {
+      color: red;
+     }
+     .l li {
+      /*height: 50px;*/
+      color: white;
+      line-height: 50px;
+      padding-left: 5%;
+     }
+    .l .tebie {
+         background-color: rgb(68,68,68);
+     }
+     .l .tebie:hover  {
+      color: rgba(255,255,255,0.5);
+     }
+     .r {
+      float: left;
+     }
+    .l li:last-child:hover  {
+        color: rgba(255,255,255,0.5);
+
+     }
+
+}
+	</style>
+</head>
+<body>
+  <div class="l">
+    <ul>
+       <li>irouduoduo的博客</li>
+       <li><a href="index.html">主页</li>
+       <li class="tebie"><span>相关链接</span></li>
+       <li><a href="http://weibo.com/u/5573124074/home?wvr=5">我的微博</li>
+       <li><a href="weixin.html">微信联系</li>
+       <li><a href="https://github.com/irouduoduo">github</li>
+       <li class="tebie">about me</li>
+       <li>My name is gao yali. I'm a little guest on github .I like everything brevity, so that I feel relaxed and relaxed.</li>
+      </ul>
+  </div>
+  <div class="r">
+	<header class="clearfix">
+	   <div class="big">
+	   	 <div class="left">
+			<img src="images/me.png">
+			<span>
+				My name is gao yali. I'm a little guest on github.I like everything brevity, so that I feel relaxed and relaxed.
+			</span>
+		</div>
+		<div class="right">
+			<ul>
+				<li class="envelope"><a href="#"><i class="fa fa-envelope fa-2x"></i></a></li>
+				<li><a href="http://weibo.com/u/5573124074/home?wvr=5" target="_blank"><i class="fa fa-weibo fa-2x"></i></a></li>
+				<li><a href="https://github.com/irouduoduo"><i class="fa fa-github fa-2x" target="_blank"></i></a></li>
+				<li><a href="weixin.html" target="_blank"><i class="fa fa-weixin fa-2x"></i></a></li>
+			</ul>
+		</div>
+	   </div>
+	</header>
+	<div class="bars">
+			<a href="javascript:;"></a><i class="fa fa-bars fa-2x"></i>
+	</div>
+  <!-- 中间图片 -->
+	<div class="center_img">
+		<img src="images/header.jpg">
+	</div>
+	<!-- 博客内容 -->
+  <div class="row">
+    <section>
+      <ul class="article-list">
+        <li class="article-list-item clearfix">
+          <time datatime="2017-06-08">2017 06 08</time>
+          <a href="#/2017/06/08"> 解决margin-top塌陷的6种方法</a>
+        </li>
+         <li class="article-list-item clearfix">
+          <time datatime="2017-05-27">2017 05 27</time>
+          <a href="#/2017/05/27"> angularjs实现查询天气的小案例(跨域请求)
+            </a>
+        </li>
+        <li class="article-list-item clearfix">
+          <time datatime="2017-05-10">2017 05 10</time>
+          <a href="#/2017/05/10">angularjs实现一个应用小程序
+            </a>
+        </li>
+         <li class="article-list-item clearfix">
+          <time datatime="2017-05-02">2017 05 02</time>
+          <a href="#/2017/05/02">原生ajax插件
+            </a>
+        </li>
+         <li class="article-list-item clearfix">
+          <time datatime="2017-04-20">2017 04 20</time>
+          <a href="#/2017/04/20">bash常见命令</a>
+        </li>
+          <li class="article-list-item clearfix">
+          <time datatime="2017-04-18">2017 04 18</time>
+          <a href="#/2017/04/18">xampp 出现You don't have permission to access on this server</a>
+        </li>
+         <li class="article-list-item clearfix">
+          <time datatime="2017-03-17">2017 03 17</time>
+          <a href="#/2017/03/17">新增语义化标签意义
+         </a>
+        </li>  
+         <li class="article-list-item clearfix">
+          <time datatime="2017-03-13">2017 03 13</time>
+          <a href="#/2017/03/13">一张图明白box-sizing属性
+         </a>
+        </li>  
+        <li class="article-list-item clearfix">
+          <time datatime="2017-03-10">2017 03 10</time>
+          <a href="#/2017/03/10"> 怎样用css3设计出向上向下的小箭头
+         </a>
+        </li>
+         <li class="article-list-item clearfix">
+          <time datatime="2017-03-02">2017 03 02</time>
+          <a href="#/2017/03/02">web前端的开始
+         </a>
+        </li>  
+      </ul>
+    </section>
+    <div class="load">
+    <a href="index.html">返回</a>
+  </div>
+  </div>
+</div>
+<!-- script -->
+ <script type="text/javascript";>
+     // var liItems = document.getElementsByClassName('article-list-item');
+     var sec = document.getElementsByTagName('section');
+      var sectionCon = sec[0].innerHTML;
+      var url = document.location.href;
+      console.log(url);
+
+     // hashchange事件监听hash的变化
+     window.addEventListener('hashchange',function(){
+         var mao = document.location.hash;
+
+         // for
+         // console.log(mao);
+         switch(mao){
+          case '#/2017/03/02':
+
+          var sec = document.getElementsByTagName('section');
+          var seContent = sec[0].innerHTML = "<article> <div>   <h1>xampp 出现You don't have permission to access on this server.</h1>     <time datatime='2017-04-18'>2017 04 18</time>  </div>  <p>没有权限访问服务器</p>  <h3>Forbidden</h3>  <p>You don't have permission to access /a/ajax.html on this server.</p> <p>Additionally, a 403 Forbidden error was encountered while trying to use an ErrorDocument to handle the request.</p>  <h4>找到httpd.conf，用记事本打开httpd.conf，然后将</h4>  <ul class='daima'>    <li><Directory /></li>   <li> Options FollowSymLinks</li>    <li>AllowOverride None</li>    <li>Order deny,allow</li>    <li>Deny from all</li><li></Directory></li>  </ul> <p>这里改成</p> <ul class='daima'>    <li><Directory /></li>   <li> Options FollowSymLinks</li>    <li>AllowOverride None</li>    <li>Order deny,allow</li>    <li>Allow from all</li><li></Directory></li> </ul>     </article>";
+          // console.log(seContent);
+  
+          break;
+          case '#/2017/03/10':
+          var sec = document.getElementsByTagName('section');
+          var seContent = sec[0].innerHTML = "<article><div><h1>怎样用css3设计出向上向下的小箭头</h1><time>2017 03 10</time></div><h2>效果图</h2><img src='images/3_10.png'><p>我以向下的箭头为例</p><ul class='daima'><li>.arrow-down {</li><li>display: inline-block;</li><li>vertical-align: top;</li><li>border-top: 4px solid #dd0000;</li><li>border-right: 4px solid transparent;</li><li>border-left: 4px solid transparent;</li><li> content:'';</li><li>margin-top: 5px;</li><li>}</li></ul><p>形成符号的元素不再是宽和高围成的，而是通过border.</p><p>一个没有内容的元素。如果你给它添加border-left和border-top并且设置成同样颜色，它倆将围成一个小方块，对方块奉献的比重为1：1，所以当你将其中的一个边设置为透明色的时候，方块按对角线剩下一半。</p></article>";
+          break;
+          case '#/2017/03/13':
+          var sec = document.getElementsByTagName('section');
+          var seContent = sec[0].innerHTML = "<article> <div >    <h1>怎样用css3设计出向上向下的小箭头</h1>    <time datatime='2017-03-10'>2017 03 13</time>  </div>  <p>一个字一个字读完下面的描述你就明白了</p> <img src='images/3_13.png'></article>";
+          break;
+          case '#/2017/03/17': var sec = document.getElementsByTagName('section');
+          var seContent = sec[0].innerHTML = "<article> <div>   <h1>html5新增语义化标签和应用头</h1>    <time datatime='2017-03-17'>2017 03 17</time>  </div>  <h2>个人见解：</h2>  <img src='images/3_17.jpeg'>  <p> 小时候舅舅家的墙上贴了一张中国地图，在我刚认识字的时候，我第一次在地图上能找到的是自己的家乡在哪里。然后你会想地图上乱七八糟的线都是什么，          在那个经常和小朋友讨论地图的年代，你会在讨论中注意到左下角的标注，那里说明了地图上的线，不同颜色都代表些什么，然后就会知道铁路有没有修到自己          家呀，蓝色的是大海啊。。。。其实这些标注就类似标签，它会让你知道一些内容具体表示什么。它是一个你不得不遵循的东西，不然谁又会知道这张地图上的         这么多信息呢。</p>      <p> 新增常用语义化标签。</p>      <p>在你看到这篇文章前，想必已经对基本的语义化标签有一定了解了，像p,a.....。      header,footer,section,article,aside,这些都是新增的，我们来谈一下常用的新增语义化标签，别动不动就用盒子，记住，div是为样式而存在。</p>      <p>(1) 'header'标签定义 section 或 document 的页眉</p>      <p>(2) 'aside': 标签定义 article 以外的内容。aside 的内容应该与 article 的内容相关。</p>      <p> 应用：一般博客分为左右两端，左边这一列一般是标题，右边是内容展示，那么左边这一栏就用aside标签，也许它外侧定义了div盒子，不过是用来调整浮动样式罢了。</p>      <p>（3）'article'： 标签定义外部的内容。比如来自一个外部的新闻提供者的一篇新的文章，或者来自 blog 的文本，或者是来自论坛的文本。亦或是来自其他外部源内容。</p>      <p>（4）'section'： 标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分。</p>      <p>（5）'nav' 标签定义导航链接的部分。</p>      <p>(6)' footer 标签定义 section 或 document 的页脚。典型地，它会包含创作者的姓名、文档的创作日期以及/或           者联系信息。</p>      <h2>语义化标签的好处</h2>      <ol>       <li>1.有利于盲人阅读器的解析</li>        <li>2.移动设备能够更完美的展示网页，对于那些css支持较弱的设备。</li>       <li>3.搜索引擎可以根据标签的语义确定上下文和权重的问题。</li>        <li>4.有利于团队的维护和开发</li>        <li>5.增强代码可读性</li>      </ol>   </article>";
+          break;
+          case '#/2017/04/18':
+           var sec = document.getElementsByTagName('section');
+          var seContent = sec[0].innerHTML = "<article>  <div>   <h1>xampp 出现You don't have permission to access on this server.</h1>     <time datatime='2017-04-18'>2017 04 18</time>  </div>  <p>没有权限访问服务器</p>  <h3>Forbidden</h3>  <p>You don't have permission to access /a/ajax.html on this server.</p> <p>Additionally, a 403 Forbidden error was encountered while trying to use an ErrorDocument to handle the request.</p>  <h4>找到httpd.conf，用记事本打开httpd.conf，然后将</h4>  <ul class='daima'>    <li><Directory /></li>   <li> Options FollowSymLinks</li>    <li>AllowOverride None</li>    <li>Order deny,allow</li>    <li>Deny from all</li><li></Directory></li>  </ul> <p>这里改成</p> <ul class='daima'>    <li><Directory /></li>   <li> Options FollowSymLinks</li>    <li>AllowOverride None</li>    <li>Order deny,allow</li>    <li>Allow from all</li><li></Directory></li> </ul>     </article>";
+          break;
+          case '#/2017/04/20':
+           var sec = document.getElementsByTagName('section');
+          var seContent = sec[0].innerHTML = "<article> <div>   <h1>xampp 出现You don't have permission to access on this server.</h1>     <time datatime='2017-04-20'>2017 04 20</time>  </div>    <p>bash常见命令</p>    <ul class='daima'>   <li>pwd (PrintWorkingDirectory)查看当前目录</li>    <li>cd (ChangeDirectory) 切换目录，如 cd /etc</li>    <li>ls (List) 查看当前目录下内容，如 ls -al</li>     <li>mkdir (MakeDirectory) 创建目录，如 mkdir blog</li>    <li>touch 创建文件，如 touch index.html</li>    <li>cat 查看文件全部内容，如 cat index.html</li>    <li>more/less 查看文件，如more /etc/passwd、less /etc/passwd</li>    <li>rm (remove) 删除文件，如 rm index.html、rm -rf  blog</li>    <li>rmdir (RemoveDirectory) 删除文件夹，只能删除空文件夹，不常用</li>   <li>mv (move) 移动文件或重命名，如 mv index.html ./demo/index.html</li>   <li>cp (copy) 复制文件，cp index.html ./demo/index.html</li>   <li>head 查看文件前几行，如 head -5 index.html   <li>tail 查看文件后几行 –n –f，如 tail index.html、tail -f -n 5 index.html</li>   <li>tab 自动补全，连按两次会将所有匹配内容显示出来</li>    <li>history 查看操作历史</li>   <li>> 和 >>重定向，如echo hello world! > README.md，>覆盖 >>追加</li>    <li>wget 下载，如wget https:/\odejs.org/dist/v4.4.0\ode-v4.4.0.tar.gz</li>    <li>tar 解压缩，如tar zxvf node-v4.4.0.tar.gz</li>   <li>curl 网络请求，如curl http://www.baidu.com</li>   <li>whoami 查看当前用户</li>    <li>| 管道符可以将多个命令连接使用，上一次（命令）的执行结果当成下一次（命令）的参数。</li>   <li>grep 匹配内容，一般结合管道符使用</li>    </ul> </article>";
+          break;
+          case '#/2017/05/02':
+           var sec = document.getElementsByTagName('section');
+          var seContent = sec[0].innerHTML ="<article>  <div>   <h1>原生ajax插件</h1>    <time datatime='2017-05-02'>2017 05 02</time>  </div>   <p>对ajax进行封装,以及调用方法，详情请去以下链接查看:</p>   <p><a href='http://blog.csdn.net/irouduoduo/article/details/71435976'>http://blog.csdn.net/irouduoduo/article/details/71435976</a></p></article>";
+          break;
+          case '#/2017/05/10':
+           var sec = document.getElementsByTagName('section');
+          var seContent = sec[0].innerHTML ="<article>  <div>   <h1>原生ajax插件</h1>    <time datatime='2017-05-02'>2017 05 02</time>  </div>   <h2>tab栏</h2>   <img src='images/5_10_tab.png'>   <p>代码:</p>   <p>代码链接</p>   <a href='http://blog.csdn.net/irouduoduo/article/details/72701820'>http://blog.csdn.net/irouduoduo/article/details/72701820</a>  </div></article>";
+          break;
+          case '#/2017/05/27':
+           var sec = document.getElementsByTagName('section');
+          var seContent = sec[0].innerHTML ="<article>  <div>   <h1>angularjs实现查询天气的小案例(跨域请求)</h1>     <time datatime='2017-05-27'>2017 05 27</time>  </div>   <h2>效果图</h2>   <img src='images/5_27.png'>   <p>代码链接</p>   <a href='http://blog.csdn.net/irouduoduo/article/details/72784224'>http://blog.csdn.net/irouduoduo/article/details/72784224</a>   </div></article>";
+          break;
+          case '#/2017/06/08':
+           var sec = document.getElementsByTagName('section');
+          var seContent = sec[0].innerHTML ="<article> <div>   <h1>解决margin-top塌陷的6种方法</h1>     <time datatime='2017-06-08'>2017 06 08</time>  </div>   <h2>demo:一个父盒子嵌套一个子盒子，子盒子margin-top带来的塌陷问题</h2>   <ul>     <li>1.给父盒子添加border</li>     <li>2.子盒子用padding-top代替margin-top</li>    <li>3.给父盒子添加overflow:hidden</li>    <li>4.父盒子:position:fixed</li>     <li>5.父盒子:display:table</li>    <li>6.给子元素的前面添加一个兄弟元素       属性为:content:'';                  overflow:hidden;</li>   </ul></article>";
+          break;
+         }
+     });
+    // 我的邮箱
+    var enve = document.getElementsByClassName('envelope');
+    enve[0].onclick = function(){
+      alert("18843425796@163.com这是我的邮箱，有问题可以联系我");
+    };
+    console.log(enve);
+    var bar = document.getElementsByClassName('bars')[0];
+    var flag=0;
+    bar.onclick = function(){
+       var l = document.getElementsByClassName('l');
+       var r = document.getElementsByClassName('r');
+      l[0].style.height=r[0].offsetHeight+'px';
+       if(flag === true){
+            document.body.style.overflow='visible';
+           l[0].style.display = "none";
+          r[0].style.width = "100%";
+        } else{    
+          document.body.style.overflow='hidden';
+          l[0].style.display = "inline-block";        
+          r[0].style.width = "40%";
+
+        }
+         flag=!flag;
+     } 
+ </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

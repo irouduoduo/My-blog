@@ -1,0 +1,122 @@
+&lt;!DOCTYPE html&gt;\  
+&lt;html lang="en"&gt;\  
+&lt;head&gt;\  
+    &lt;meta charset="UTF-8"&gt;\  
+    &lt;title&gt;\Tab 标签&lt;/title&gt;\  
+    &lt;style&gt;\  
+  
+        body {  
+            margin: 0;  
+            padding: 0;  
+            background-color: #F7F7F7;  
+        }  
+      
+        .tabs {  
+            width: 400px;  
+            margin: 30px auto;  
+            background-color: #FFF;  
+            border: 1px solid #C0DCC0;  
+            box-sizing: border-box;  
+        }  
+        img {  
+            width: 400px;  
+        }  
+  
+        .tabs nav {  
+            height: 40px;  
+            text-align: center;  
+            line-height: 40px;  
+            overflow: hidden;  
+            background-color: #C0DCC0;  
+            display: flex;  
+        }  
+  
+        nav a {  
+            display: block;  
+            width: 100px;  
+            border-right: 1px solid #FFF;  
+            color: #000;  
+            text-decoration: none;  
+        }  
+  
+        nav a:last-child {  
+            border-right: 0 none;  
+        }  
+  
+        nav a.active {  
+            background-color: #9BAF9B;  
+        }  
+  
+        .cont {  
+            overflow: hidden;  
+            /*display: none;*/  
+        }  
+  
+        .cont ol {  
+            line-height: 30px;  
+        }  
+        p {  
+            text-align: center;  
+            height: 30px;  
+            line-height: 30px;  
+        }  
+        li {  
+            list-style: none;  
+            height: 30px;  
+            line-height: 30px;  
+        }  
+  
+    &lt;/style&gt;\  
+  
+    &lt;!--[if lte IE 6]&gt;\  
+          
+    &lt;![endif]--&gt;\  
+&lt;/head&gt;\  
+&lt;body ng-app="Tabs"&gt;\  
+  
+    &lt;div class="tabs" ng-controller="TabsController"&gt;\  
+        &lt;nav&gt;\  
+        &lt;!-- 指令之间没有分号 --&gt;\  
+            &lt;a href="javascript:;" &lt;span style="background-color: rgb(51, 204, 0);"&gt;\ng-class="{active: type == 'local'}" ng-mouseover="switch('local')&lt;/span&gt;\"&gt;\白山茶&lt;/a&gt;\  
+            &lt;a href="javascript:;" ng-class="{active: type == 'global'}" ng-mouseover="switch('global')"&gt;\作曲&lt;/a&gt;\  
+            &lt;a href="javascript:;" ng-class="{active: type == 'sports'}" ng-mouseover="switch('sports')"&gt;\背景&lt;/a&gt;\  
+            &lt;a href="javascript:;" ng-class="{active: type == 'funny'}" ng-mouseover="switch('funny')"&gt;\歌词&lt;/a&gt;\  
+  
+        &lt;/nav&gt;\  
+        &lt;div &lt;span style="background-color: rgb(51, 255, 51);"&gt;\ng-switch on="type"&lt;/span&gt;\&gt;\  
+            &lt;section class="cont" &lt;span style="background-color: rgb(51, 255, 51);"&gt;\ng-switch-when="local"&lt;/span&gt;\&gt;\  
+                &lt;p&gt;\2017.5.24&lt;/p&gt;\  
+            &lt;/section&gt;\  
+            &lt;section class="cont" &lt;span style="background-color: rgb(51, 255, 51);"&gt;\ng-switch-when="globa&lt;/span&gt;\l"&gt;\  
+                &lt;p&gt;\作曲：陈雪凝&lt;/p&gt;\  
+                &lt;p&gt;\作词:陈雪凝&lt;/p&gt;\  
+                &lt;p&gt;\编曲:海艺音乐&lt;/p&gt;\  
+            &lt;/section&gt;\  
+            &lt;section class="cont" &lt;span style="background-color: rgb(51, 255, 51);"&gt;\ng-switch-when="sports&lt;/span&gt;\"&gt;\  
+                    &lt;img src="bsc.png"&gt;\  
+            &lt;/section&gt;\  
+            &lt;section class="cont" &lt;span style="background-color: rgb(51, 255, 51);"&gt;\ng-switch-when="funny&lt;/span&gt;\"&gt;\  
+                &lt;ul&gt;\  
+                    &lt;li&gt;\你认真的说你喜欢白山茶&lt;/li&gt;\  
+                    &lt;li&gt;\怡然自得的收起别的红玫瑰&lt;/li&gt;\  
+                    &lt;li&gt;\你温柔的说你眷恋我&lt;/li&gt;\  
+                    &lt;li&gt;\然后迫不及待的爱别人&lt;/li&gt;\  
+                    &lt;li&gt;\然后迫不及待的爱别人&lt;/li&gt;\  
+                    &lt;li&gt;\然后迫不及待的爱别人&lt;/li&gt;\  
+                    &lt;li&gt;\然后迫不及待的爱别人&lt;/li&gt;\  
+                &lt;/ol&gt;\  
+            &lt;/section&gt;\  
+        &lt;/div&gt;\  
+    &lt;/div&gt;\  
+  
+    &lt;script src="../../js/angular.min.js"&gt;\&lt;/script&gt;\  
+    &lt;script&gt;\  
+       angular.module('Tabs',[]).controller('TabsController',['$scope',function($scope){  
+             $scope.type = 'local';  
+             $scope.switch = function(type){  
+                $scope.type = type;  
+             }  
+       }]);  
+    &lt;/script&gt;\  
+&lt;/body&gt;\  
+&lt;/html&gt;\  
